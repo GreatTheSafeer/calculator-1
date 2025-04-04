@@ -5,8 +5,8 @@ body{
 }
 #container{
     width: 1000px;
-    height: 500px;
-    background-image: linear-gradient(to bottom,green,lightgreen,lightyellow,yellow);
+    height: 550px;
+    background-color: #F7F7F7;
     margin: 20px auto;
 
 
@@ -14,16 +14,20 @@ body{
 #calculator{
     width: 320px;
     height: 520px;
-    background-image: radial-gradient(red,orange,yellow);
+    background-color: #854836;
     
     top: 20px;
     position: relative;
     border-radius: 10px;
-    box-shadow: 4px 4px 4px black;
+    box-shadow: 10px 10px 10px black;
+    margin:200px;
+    padding:10px;
 
 }
 #result{
     height: 120px;
+    background-color: #F7F7F7;
+    border-radius: 20px;
 }
 #keyboard{
     height: 400px;
@@ -39,7 +43,7 @@ body{
     font-size: 15px;
 }
 .number,.empty{
-    background-color: green;
+    background-color:#FFB22C;
 
 }
 .number,.operator{
@@ -47,7 +51,8 @@ body{
 
 }
 .operator{
-    color: aqua;
+    color:white;
+    background-color: #F16767;
 
 }
 .operator:active,.number:active{
@@ -55,4 +60,11 @@ body{
 }
 .operator:focus,.number:focus,.empty:focus{
     outline: 0;
+}
+.number:hover,.empty:hover{
+  border: 3px solid;
+  
+}
+.operator:hover{
+    border: 3px solid #8c3737;
 }
